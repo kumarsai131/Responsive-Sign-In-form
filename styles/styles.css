@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+body{
+    background: url("images.jpg") no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    font-size: 16px
+}
+
+.wrapper{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid orange;
+    padding: 30px;
+    background: #fff;
+}
+ .title h1{
+     text-align: center;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+     color: #02b3e4;
+     letter-spacing: 5px;
+ }
+
+ .sign-in h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #02b3e4;
+ }
+
+ .input-field{
+     width: 100%;
+
+ }
+
+ .input-field .input{
+     width: 100%;
+     background: transparent;
+     border: 1px solid rgba(0,0,0,0.35);
+     padding: 10px;
+     margin-bottom: 15px;
+     transition: all 0.5s ease;
+ }
+
+ .input-field .input:focus{
+     border-color: #02b3e4;
+
+ }
+
+ .input-field .btn{
+     width: 100%;
+     margin-bottom: 15px;
+     border: 2px solid #02b3e4;
+     text-align: center;
+     padding: 10px;
+     font-size: 1.125em;
+     cursor: pointer;
+     text-transform: uppercase;
+     position: relative;
+     letter-spacing: 2px;
+    overflow: hidden;
+ }
+
+.input-field .btn p{ 
+     color: #02b3e4;
+     position: relative;
+     transition: all 0.5s ease;
+}
+
+.input-field .btn:before{
+    content:"";
+    position: absolute;
+    top: -48px;
+    background: #02b3e4;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.input-field .btn:hover::before{
+    top: 0;
+}
+
+.input-field .btn:hover p{
+    color: #fff;
+}
+
+.forgot{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.forgot a{
+    color: gray;
+    transition: all 0.5s ease;
+}
+
+.forgot a:hover{
+    color: #02b3e4;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.social .social-title p{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.social-content{
+    display: flex;
+    width: 100%;
+}
+
+.social-content .items{
+    width: 46%;
+    padding: 10px;
+    border: 2px solid #02b3e4;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-content .items p{
+    color: #02b3e4;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.5s ease;
+
+}
+
+.social-content .items:first-child{
+    margin-right: 8%;
+}
+
+.social-content .items:before{
+    content: "";
+    position:absolute;
+    bottom:-43px;
+    left: 0;
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    background: #02b3e4;
+}
+
+.social-content .items:hover:before{
+    bottom: 0;
+}
+
+.social-content .items p:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 470px){
+    .social-content{
+        flex-direction: column;
+    }
+    .social-content .items{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .title{
+        margin-bottom: -10px;
+    }
+
+    .social-title{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
